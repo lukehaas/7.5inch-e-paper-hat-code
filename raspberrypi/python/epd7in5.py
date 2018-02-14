@@ -119,31 +119,105 @@ class EPD:
         self.send_data(0x28)
 
         self.send_command(POWER_ON)
-        self.wait_until_idle()
+        print('BCM2')
+        print(self.digital_read(epdif.BCM2))
 
-        self.send_command(PLL_CONTROL)
-        self.send_data(0x3c)
+        print('BCM3')
+        print(self.digital_read(epdif.BCM3))
 
-        self.send_command(TEMPERATURE_CALIBRATION)
-        self.send_data(0x00)
+        print('BCM4')
+        print(self.digital_read(epdif.BCM4))
 
-        self.send_command(VCOM_AND_DATA_INTERVAL_SETTING)
-        self.send_data(0x77)
+        print('BCM17')
+        print(self.digital_read(epdif.BCM17))
 
-        self.send_command(TCON_SETTING)
-        self.send_data(0x22)
+        print('BCM27')
+        print(self.digital_read(epdif.BCM27))
 
-        self.send_command(TCON_RESOLUTION)
-        self.send_data(0x02)     #source 640
-        self.send_data(0x80)
-        self.send_data(0x01)     #gate 384
-        self.send_data(0x80)
+        print('BCM22')
+        print(self.digital_read(epdif.BCM22))
 
-        self.send_command(VCM_DC_SETTING)
-        self.send_data(0x1E)      #decide by LUT file
+        print('BCM9')
+        print(self.digital_read(epdif.BCM9))
 
-        self.send_command(0xe5)           #FLASH MODE
-        self.send_data(0x03)
+        print('BCM11')
+        print(self.digital_read(epdif.BCM11))
+
+        print('BCM0')
+        print(self.digital_read(epdif.BCM0))
+
+        print('BCM5')
+        print(self.digital_read(epdif.BCM5))
+
+        print('BCM6')
+        print(self.digital_read(epdif.BCM6))
+
+        print('BCM13')
+        print(self.digital_read(epdif.BCM13))
+
+        print('BCM19')
+        print(self.digital_read(epdif.BCM19))
+
+        print('BCM26')
+        print(self.digital_read(epdif.BCM26))
+
+        print('BCM15')
+        print(self.digital_read(epdif.BCM15))
+
+        print('BCM18')
+        print(self.digital_read(epdif.BCM18))
+
+        print('BCM23')
+        print(self.digital_read(epdif.BCM23))
+
+        print('BCM24')
+        print(self.digital_read(epdif.BCM24))
+
+        print('BCM25')
+        print(self.digital_read(epdif.BCM25))
+
+        print('BCM7')
+        print(self.digital_read(epdif.BCM7))
+
+        print('BCM1')
+        print(self.digital_read(epdif.BCM1))
+
+        print('BCM12')
+        print(self.digital_read(epdif.BCM12))
+
+        print('BCM16')
+        print(self.digital_read(epdif.BCM16))
+
+        print('BCM20')
+        print(self.digital_read(epdif.BCM20))
+
+        print('BCM21')
+        print(self.digital_read(epdif.BCM21))
+        # self.wait_until_idle()
+
+        # self.send_command(PLL_CONTROL)
+        # self.send_data(0x3c)
+
+        # self.send_command(TEMPERATURE_CALIBRATION)
+        # self.send_data(0x00)
+
+        # self.send_command(VCOM_AND_DATA_INTERVAL_SETTING)
+        # self.send_data(0x77)
+
+        # self.send_command(TCON_SETTING)
+        # self.send_data(0x22)
+
+        # self.send_command(TCON_RESOLUTION)
+        # self.send_data(0x02)     #source 640
+        # self.send_data(0x80)
+        # self.send_data(0x01)     #gate 384
+        # self.send_data(0x80)
+
+        # self.send_command(VCM_DC_SETTING)
+        # self.send_data(0x1E)      #decide by LUT file
+
+        # self.send_command(0xe5)           #FLASH MODE
+        # self.send_data(0x03)
 
     def wait_until_idle(self):
         while(self.digital_read(self.busy_pin) == 0):      # 0: busy, 1: idle
