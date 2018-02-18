@@ -119,82 +119,85 @@ class EPD:
         self.send_data(0x28)
 
         self.send_command(POWER_ON)
-        print('BCM2')
-        print(self.digital_read(epdif.BCM2))
+        ii = 0
+	while(ii < 1000):
+		ii+=1
+		print('BCM2')
+        	print(self.digital_read(epdif.BCM2))
 
-        # print('BCM3')
-        # print(self.digital_read(epdif.BCM3))
+        	print('BCM3')
+        	print(self.digital_read(epdif.BCM3))
 
-        # print('BCM4')
-        # print(self.digital_read(epdif.BCM4))
+        	print('BCM4')
+        	print(self.digital_read(epdif.BCM4))
 
-        # print('BCM17')
-        # print(self.digital_read(epdif.BCM17))
+        	print('BCM17')
+        	print(self.digital_read(epdif.BCM17))
 
-        # print('BCM27')
-        # print(self.digital_read(epdif.BCM27))
+        	print('BCM27')
+        	print(self.digital_read(epdif.BCM27))
 
-        # print('BCM22')
-        # print(self.digital_read(epdif.BCM22))
+        	print('BCM22')
+        	print(self.digital_read(epdif.BCM22))
 
-        # print('BCM9')
-        # print(self.digital_read(epdif.BCM9))
+        	print('BCM9')
+        	print(self.digital_read(epdif.BCM9))
 
-        # print('BCM11')
-        # print(self.digital_read(epdif.BCM11))
+        	print('BCM11')
+        	print(self.digital_read(epdif.BCM11))
 
-        # print('BCM0')
-        # print(self.digital_read(epdif.BCM0))
+        	print('BCM0')
+        	print(self.digital_read(epdif.BCM0))
 
-        # print('BCM5')
-        # print(self.digital_read(epdif.BCM5))
+        	print('BCM5')
+        	print(self.digital_read(epdif.BCM5))
 
-        # print('BCM6')
-        # print(self.digital_read(epdif.BCM6))
+        	print('BCM6')
+        	print(self.digital_read(epdif.BCM6))
 
-        # print('BCM13')
-        # print(self.digital_read(epdif.BCM13))
+        	print('BCM13')
+        	print(self.digital_read(epdif.BCM13))
 
-        # print('BCM19')
-        # print(self.digital_read(epdif.BCM19))
+        	print('BCM19')
+        	print(self.digital_read(epdif.BCM19))
 
-        # print('BCM26')
-        # print(self.digital_read(epdif.BCM26))
+        	print('BCM26')
+        	print(self.digital_read(epdif.BCM26))
 
-        # print('BCM15')
-        # print(self.digital_read(epdif.BCM15))
+        	print('BCM15')
+        	print(self.digital_read(epdif.BCM15))
 
-        # print('BCM18')
-        # print(self.digital_read(epdif.BCM18))
+        	print('BCM18')
+        	print(self.digital_read(epdif.BCM18))
 
-        # print('BCM23')
-        # print(self.digital_read(epdif.BCM23))
+        	print('BCM23')
+        	print(self.digital_read(epdif.BCM23))
 
-        # print('BCM24')
-        # print(self.digital_read(epdif.BCM24))
+        	print('BCM24')
+        	print(self.digital_read(epdif.BCM24))
 
-        # print('BCM25')
-        # print(self.digital_read(epdif.BCM25))
+        	print('BCM25')
+        	print(self.digital_read(epdif.BCM25))
 
-        # print('BCM7')
-        # print(self.digital_read(epdif.BCM7))
+        	print('BCM7')
+        	print(self.digital_read(epdif.BCM7))
 
-        # print('BCM1')
-        # print(self.digital_read(epdif.BCM1))
+        	print('BCM1')
+        	print(self.digital_read(epdif.BCM1))
 
-        # print('BCM12')
-        # print(self.digital_read(epdif.BCM12))
+        	print('BCM12')
+        	print(self.digital_read(epdif.BCM12))
 
-        # print('BCM16')
-        # print(self.digital_read(epdif.BCM16))
+        	print('BCM16')
+        	print(self.digital_read(epdif.BCM16))
 
-        # print('BCM20')
-        # print(self.digital_read(epdif.BCM20))
+        	print('BCM20')
+        	print(self.digital_read(epdif.BCM20))
 
-        # print('BCM21')
-        # print(self.digital_read(epdif.BCM21))
+        	print('BCM21')
+        	print(self.digital_read(epdif.BCM21))
 
-
+		self.delay_ms(100)
 
 
 
