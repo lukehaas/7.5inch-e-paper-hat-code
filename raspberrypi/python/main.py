@@ -49,7 +49,7 @@ def main():
     # draw.arc((40, 80, 180, 220), 0, 360, fill = 0)
     # epd.display_frame(epd.get_frame_buffer(image))
 
-    image = Image.open('monocolor.bmp')
+    image = Image.open('~/paper-pi/repo/build/monocolor.bmp')
     epd.display_frame(epd.get_frame_buffer(image))
 
     # You can get frame buffer from an image or import the buffer directly:
