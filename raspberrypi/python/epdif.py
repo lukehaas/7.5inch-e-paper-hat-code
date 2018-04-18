@@ -30,9 +30,9 @@ import time
 
 # Pin definition
 RST_PIN         = 17
-DC_PIN          = 25
+DC_PIN          = 6
 CS_PIN          = 8
-BUSY_PIN        = 24
+BUSY_PIN        = 5
 
 # SPI device, bus = 0, device = 0
 SPI = spidev.SpiDev(0, 0)
